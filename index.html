@@ -8,12 +8,75 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Basic Wiki</title>
   </head>
   <body>
     <header>
       <h1>Basics Online Wiki</h1>
     </header>
+
+    <div class="container">
+      <div class="accordian" id="accordianParent">
+        <div class="card">
+          <div class="card-header">
+            <button
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              type="button"
+              class="btn btn-link btn-block text-left"
+            >
+              Card Header - Card #1
+            </button>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordianParent">
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi iste saepe sed unde fugiat in quisquam magnam
+                repellendus vitae sint.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <button
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              type="button"
+              class="btn btn-link btn-block text-left"
+            >
+              Card Header - Card #2
+            </button>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordianParent">
+            <div class="card-body">
+              <h5 class="card-title">List Group</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, distinctio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">Definition:</div>
+        <div class="col">Answer:</div>
+      </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
